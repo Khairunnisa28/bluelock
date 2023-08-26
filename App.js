@@ -1,8 +1,11 @@
 import React from 'react';
 import { useState } from "react";
 import ModalComponent from "./component/Modal";
+import FormComponent from "./component/form";
+import Navbar from './pages/Navbar';
 import logo from './image/logo.png';
 import './App.css';
+
 
 const Greeting = (props) => {
   return <h1>Selamat Datang {props.name}, Silakan Pilih Pemain Sepak Bola Favorit</h1>;
@@ -34,6 +37,7 @@ function App() {
 
   return (
     <div className="App">
+      <Navbar />
       <img src={logo} alt="Logo" />
       <Greeting name="Nida" />
       <ModalComponent show={show} message={modalMessage} toggleModal={toggleModal} updateSelectedPlayer={updateSelectedPlayer} />
@@ -43,11 +47,12 @@ function App() {
         <p>{selectedPlayer}</p>
       </div>
       <div>
-        <h1>Fitur Skor Poin:</h1>
+        <h1>Skor Poin:</h1>
         <p>Skor: {score}</p>
         <button onClick={incrementScore}>Tambah Poin</button>
         <button onClick={decrementScore}>Kurangi Poin</button>
       </div>
+      <FormComponent/>
     </div>
   );
 }
