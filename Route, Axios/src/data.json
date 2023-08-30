@@ -1,0 +1,20 @@
+{
+    "players": [
+      {
+        "name": "John Doe",
+        "team": "Team A",
+        "gender": "Male"
+      },
+      {
+        "name": "Jane Smith",
+        "team": "Team B",
+        "gender": "Female"
+      },
+      {
+        "name": "Bob Johnson",
+        "team": "Team A",
+        "gender": "Male"
+      }
+    ]
+  }
+  

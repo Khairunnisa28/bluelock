@@ -1,0 +1,28 @@
+{
+  "players": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "team": "Tim A",
+      "gender": "Laki-laki"
+    },
+    {
+      "id": 2,
+      "name": "Maria Garcia",
+      "team": "Tim B",
+      "gender": "Perempuan"
+    },
+    {
+      "id": 3,
+      "name": "Mohammed Ali",
+      "team": "Tim A",
+      "gender": "Laki-laki"
+    },
+    {
+      "id": 4,
+      "name": "Luis Hernandez",
+      "team": "Tim C",
+      "gender": "Laki-laki"
+    }
+  ]
+}
