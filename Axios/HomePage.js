@@ -21,13 +21,32 @@ class Homepage extends React.Component {
   }
 
   render() {
-    console.log("---------------Ini akan dipasang");
+    const { users } = this.state;
     return (
-      <div>
-        {/* Render your user data here */}
-        {this.state.users.map((user) => (
-          <div key={user.id}>{user.name}</div>
-        ))}
+        <div>
+        <h1>User List</h1>
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Phone</th>
+              {/* Add more table headers for other user properties */}
+            </tr>
+          </thead>
+          <tbody>
+            {users.map((user) => (
+              <tr key={user.id}>
+                <td>{user.id}</td>
+                <td>{user.name}</td>
+                <td>{user.email}</td>
+                <td>{user.phone}</td>
+                {/* Add more table cells for other user properties */}
+              </tr>
+            ))}
+          </tbody>
+        </table>
       </div>
     );
   }
